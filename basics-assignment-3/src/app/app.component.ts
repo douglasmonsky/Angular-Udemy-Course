@@ -8,16 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
     display = true;
     changes = [];
-    i = 1;
+    i = 0;
 
     changeDisplay() {
         this.display = !this.display;
-        this.changes.push( ++this.i);
-    }
-
-    check() {
-        if (this.i > 5) {
-            return 'blue';
-        }
+        this.changes.push(++this.i);
     }
 }
