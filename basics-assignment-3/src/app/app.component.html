@@ -12,7 +12,7 @@
       (click)="changeDisplay()">Display Details</button>
       <p *ngIf="display">testing</p>
       <p [ngStyle]="{backgroundColor: check()}" 
-        [ngClass]="{online: check() === 'blue'}" 
+        [ngClass]="{white: check() === 'blue'}" 
         *ngFor="let value of changes">{{value}}
       </p>
     </div>
